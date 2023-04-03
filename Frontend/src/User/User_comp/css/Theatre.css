@@ -28,12 +28,13 @@
     margin-left: 600px;
 }
 .thea_seat
-{  
-     display: flex;
+{   
+    display: flex;
     background: rgba(243, 225, 218, 1);
     height: 500px;
     width: 1500px;
     border-radius: 20px;
     margin-left: 13px;
-    margin-top: 30px;
+    margin-top: 50px;
+    padding-top: 10px;
 }

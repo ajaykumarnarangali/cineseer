@@ -1,23 +1,26 @@
 import React from 'react'
 import './css/Upcoming.css'
 import Avatar from '../../Image/Avatar.jpg'
+import {Link} from 'react-router-dom'
 function Upcoming() {
   return (
     <div style={{display:'flex'}}>
-     <div class="card">
+     <div className="card">
       <div className='img_movie'>
+      <Link to='/Ratings'>
   <img src={Avatar} alt="Avatar"  style={{display: 'flex', height: '300px',width: '240px',borderRadius:'20px 20px 0px 0px'}}/>
+  </Link>
   </div>
-  <div class="container">
+  <div className="container">
     <h4><b>Movie name</b></h4>
-    <button className='book'>Book Ticket</button>
+    <Link to='/Theatredetails'> <button className='book'>Book Ticket</button></Link>
   </div>
 </div>
-<div class="card">
-      <div className='img_movie'>
+<div className="card">
+  <div className='img_movie'>
   <img src={Avatar} alt="Avatar"  style={{display: 'flex', height: '300px',width: '240px',borderRadius:'20px 20px 0px 0px'}}/>
   </div>
-  <div class="container">
+  <div className="container">
     <h4><b>Movie name</b></h4>
     <button className='book'>Book Ticket</button>
   </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../User_comp/css/Rating.css'
 import Avatar from '../../Image/Avatar.jpg'
+import {Link} from 'react-router-dom'
 function Rating() {
   return (
     <div className='rate_main'>
@@ -9,7 +10,7 @@ function Rating() {
         <img className='rate_image' src={Avatar} alt='nothing'></img>
        </div>
        <div style={{marginTop:'485px',marginLeft:'-331px'}}>
-        <button className='rate_button'><b>Book Ticket</b></button>
+       <Link to='/Theatredetails'> <button className='rate_button'><b>Book Ticket</b></button></Link>
        </div>
       </div> 
       <div className='rate_sec'>
@@ -17,13 +18,16 @@ function Rating() {
            <h1>predicted rating</h1>
        </div>
        <div  className='rate_score'>
-         <h1>your score and user ratings</h1>
+         <h1>your score  </h1>
       </div>
       <div   className='rate_score'>
         <h1>synops</h1>
       </div>
-      <div   className='rate_score'>
-        <h1>details</h1>
+      <div   className='rate_score1'>
+        <h1>user ratings</h1>
+        <Link to='/Userreview'>
+        <button className='rate_rev'>Click here &gt;</button>
+        </Link>
       </div>
       </div> 
     </div>

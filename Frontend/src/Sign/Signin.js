@@ -1,5 +1,6 @@
 import React from 'react'
 import './css/Signin.css'
+import {Link} from 'react-router-dom'
 function signup() {
   return (
     <div className='main'>
@@ -9,7 +10,7 @@ function signup() {
           <h1>Sign in</h1>
           <div className='email'>
             <label><b>Email:</b></label>
-            <input type='email' placeholder='Email' required className='input'></input>
+            <input type='email'  required className='input'></input>
           </div>
           <div className='pass'>
             <label><b>Password:</b></label>
@@ -20,7 +21,7 @@ function signup() {
           </div>
           <div>
          <p className="link">
-          <b> Don't have an account yet?</b><a href='nothing'>Register now</a> 
+          <b> Don't have an account yet?</b><Link to='/Signup'>Register now</Link>
          </p>
       </div>
         </div>

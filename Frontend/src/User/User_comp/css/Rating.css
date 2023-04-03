@@ -56,3 +56,23 @@
     width: 400px;
     height: 280px;
 }
+.rate_rev
+{
+    height: 30px;
+    margin: 30px 20px;
+    cursor: pointer;
+    background: transparent;
+    border-color: white;
+    font-weight: bold;
+}
+.rate_rev:hover
+{
+    background: transparent;
+}
+.rate_score1
+{
+    background: transparent;
+    width: 400px;
+    height: 280px;
+    display: flex;
+}
